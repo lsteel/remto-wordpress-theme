@@ -25,7 +25,7 @@ get_header(); ?>
 							<p>Organize the things you want to remember into easily memorable <i><b>timeframes</b></i></p>
 							<a href="#" class="button hero-button">sign up / sign in</a>
             </div>
-            <div class="one-half column">
+            <div class="one-half column text-left">
 							<img src="<?php echo get_template_directory_uri() . '/images/tasks-mini.png'; ?>" alt="Tasks view on iPad Mini" class="ipad" />
               <img src="<?php echo get_template_directory_uri() . '/images/lists-6plus.png'; ?>" alt="Timeframes view on iPhone 6 Plus" class="iphone" />
             </div>
