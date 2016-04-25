@@ -5,22 +5,47 @@
 
 /* Width Queries */
 
-@media (min-width: 320px) {} //Remove {} before use
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px)
 
-@media (min-width: 400px) {} //Remove {} before use
+  .main-navigation
+    .header-sign-up
+      display inline-block
+      margin 11px 50px 0 0
 
+/* Larger than tablet */
+@media (min-width: 750px)
 
-@media (min-width: 550px) {} //Remove {} before use
+  .main-navigation
+    .header-sign-up
+      margin 0 0 0 10px
 
+  .menu-main-menu-container
+    display inline-block
+    position relative
+    padding 0
+    top auto
+    right auto
+    height 100%
+    background transparent
+    box-shadow none
+    vertical-align middle
+    & > .nav-menu
+      li
+        margin 10px 0 11px
+        width auto
+        text-align center
+        > a
+          padding 8px 7px 8px
 
-@media (min-width: 768px) {} //Remove {} before use
+/* Larger than desktop */
+@media (min-width: 1000px) {}
 
-
-@media (min-width: 992px) {} //Remove {} before use
-
-
-@media (min-width: 1200px) {} //Remove {} before use
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
 
 
