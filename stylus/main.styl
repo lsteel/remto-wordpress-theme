@@ -1,0 +1,231 @@
+// out: ../style.css, sourcemap: true, compress: true
+
+/* Mobile first queries */
+@import 'wp'
+@import 'reset'
+@import 'skeleton'
+@import 'fontface'
+
+$black = #000
+$white = #fff
+$off-white = #f1f2f2
+$clear-white = rgba(255,255,255,.3)
+$less-clear-white = rgba(255,255,255,.6)
+$dark-grey = #333333
+$lgt-grey = #444444
+$lgt-lgt-grey = #b7b7b7
+$red = #CA302A
+$clear-red = rgba(202,48,42,.6)
+$orange = #E18B00
+$clear-orange = rgba(225,139,0,.6)
+$yellow = #EEB300
+$clear-yellow = rgba(238,179,0,.6)
+$green = #5FB3AB
+$clear-green = rgba(95,179,171,.6)
+$blue = #357B96
+$clear-blue = rgba(53,123,150,.6)
+$violet = #6D1764
+$clear-violet = rgba(109,23,100,.6)
+
+//Futura-Heavy          700
+//Futura-Book           400
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active
+  color inherit
+  text-decoration none
+
+h4,h5,h6,p,ol,ul
+  line-height 1.3
+
+h1
+  font-size 200%
+  font-weight 400
+
+p
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active
+    color inherit
+    text-decoration underline
+
+img
+  max-width 100%
+
+.red
+  color $red
+
+.orange
+  color $orange
+
+.yellow
+  color $yellow
+
+.green
+  color $green
+
+.blue
+  color $blue
+
+.violet
+  color $violet
+
+.red-back
+  color $white
+  background-color $clear-red
+
+.orange-back
+  color $white
+  background-color $clear-orange
+
+.yellow-back
+  color $white
+  background-color $clear-yellow
+
+.green-back
+  color $white
+  background-color $clear-green
+
+.blue-back
+  color $white
+  background-color $clear-blue
+
+.violet-back
+  color $white
+  background-color $clear-violet
+
+.italic
+  font-style italic
+
+.strike-through
+  text-decoration line-through
+
+//remove this section before live production
+// .screen-resolution
+//   display block
+//   position fixed
+//   bottom 20px
+//   right 20px
+//   color $white
+//end section to remove
+
+
+//Required for ng-sortable to function on mobile for scroll
+.as-sortable-item
+  -ms-touch-action auto
+  touch-action auto
+
+.modal-dialog
+  margin-top 80px
+.modal-header
+  color $dark-grey
+.close-btn
+  z-index 9999
+.modal-body
+  color $dark-grey
+
+html
+  -webkit-font-smoothing: antialiased;
+
+html, body
+  margin 0 auto
+  padding 0
+  width 100%
+  height auto
+  font-size 14px
+  letter-spacing -.5px
+  font-weight 400
+  font-family 'Lato', sans-serif
+  color $dark-grey
+  overflow scroll
+  overflow-x hidden
+  overflow-y scroll
+
+
+// HEADER //
+
+header
+  overflow hidden
+
+.site-branding
+  padding 10px
+
+.site-title
+  display inline-block
+  padding 0
+  margin 0
+  margin-left 10px
+  font-size 20px
+  text-transform lowercase
+  vertical-align middle
+  a:link, a:visited, a:hover, a:active
+    text-decoration none
+
+.branding-img-container
+  display inline-block
+  width 40px
+  height 40px
+  vertical-align middle
+  border-radius 5px
+  overflow hidden
+
+.main-navigation
+  display inline-block
+  position absolute
+  height 100%
+  width auto
+  right 7px
+  top 0
+  font-size 130%
+  text-transform lowercase
+
+
+.menu-main-menu-container
+  height 100%
+  & > .nav-menu
+    height 100%
+    li
+      margin 10px 0 11px
+      &:nth-child(1)
+        &:hover, &.current-menu-item
+          background $red
+          color $white
+      &:nth-child(2)
+        &:hover, &.current-menu-item
+          background $orange
+          color $white
+      &:nth-child(3)
+        &:hover, &.current-menu-item
+          background $yellow
+          color $white
+      &:nth-child(4)
+        &:hover, &.current-menu-item
+          background $green
+          color $white
+      &:nth-child(5)
+        &:hover, &.current-menu-item
+          background $blue
+          color $white
+      &:nth-child(6)
+        &:hover, &.current-menu-item
+          background $violet
+          color $white
+      > a
+        padding 8px 7px 8px
+
+
+// FRONT PAGE //
+
+.hero-section
+  background-image url('images/todoly.png')
+  background-size 400px
+  height 500px
+
+
+
+@import 'media-queries'
