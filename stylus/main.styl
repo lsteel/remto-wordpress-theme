@@ -47,6 +47,12 @@ h1
   font-size 200%
   font-weight 300
 
+h2
+  margin 30px 0 20px 0
+  line-height 1
+  font-size 200%
+  font-weight 300
+
 p
   margin-bottom 10px
   &:last-of-type
@@ -64,9 +70,13 @@ p
 
 .text-right
   text-align right
-  
+
 .text-center
   text-align center
+
+.clear-fix
+  clear both
+  height 0
 
 img
   max-width 100%
@@ -118,30 +128,6 @@ img
 
 .strike-through
   text-decoration line-through
-
-//remove this section before live production
-// .screen-resolution
-//   display block
-//   position fixed
-//   bottom 20px
-//   right 20px
-//   color $white
-//end section to remove
-
-
-//Required for ng-sortable to function on mobile for scroll
-.as-sortable-item
-  -ms-touch-action auto
-  touch-action auto
-
-.modal-dialog
-  margin-top 80px
-.modal-header
-  color $dark-grey
-.close-btn
-  z-index 9999
-.modal-body
-  color $dark-grey
 
 html
   -webkit-font-smoothing: antialiased;
@@ -271,7 +257,14 @@ p.site-title
 .section
   > *
     &:last-child
-      margin-bottom 30px
+      padding-bottom 30px
+  .button
+    border 2px solid $white
+    color $white
+    &:hover, &:focus
+      border-color $white
+      background $white
+      color $dark-grey
 
 
 // FRONT PAGE //
@@ -284,6 +277,8 @@ p.site-title
   background-image url('images/todoly.png')
   background-size 400px
   overflow hidden
+  h1
+    font-size 230%
   .iphone, .ipad
     position absolute
     top 0
@@ -303,6 +298,33 @@ p.site-title
     border-color $green
     background $green
     color $white
+
+.section-two
+  text-align center
+  background $off-white
+  h2, .large-icons
+    font-size 300%
+  .left-half, .right-half
+    float right
+  .left-half > img
+    margin 40px auto
+    max-width 75%
+  ul
+    margin 0 0 20px 0
+    li
+      margin-bottom 2px
+
+.section-three
+  text-align center
+  color $white
+  background $green
+  h2
+    margin-bottom 30px
+    font-size 300%
+  .button
+    margin-bottom 30px
+  .devices-image
+    margin-left -4%
 
 
 

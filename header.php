@@ -43,7 +43,7 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '•••', 'remto' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			<a class="button header-sign-up" href="#">sign in/up</a>
+			<a href="http://app.remto.xyz/" target="_blank" class="button header-sign-up">sign in/up</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
