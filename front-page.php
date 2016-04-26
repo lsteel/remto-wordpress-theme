@@ -53,6 +53,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="section section-three">
+				<div class="green-back section-cover"></div>
 				<div class="container">
 					<div class="row">
 						<div class="twelve columns text-center">
