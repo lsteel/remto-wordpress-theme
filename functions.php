@@ -7,6 +7,8 @@
  * @package remto
  */
 
+ wp_enqueue_script("jquery");
+
 if ( ! function_exists( 'remto_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
